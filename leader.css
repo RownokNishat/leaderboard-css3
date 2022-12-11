@@ -1,0 +1,136 @@
+/* top players style */
+.top-players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 3px;
+  margin-bottom: 29px;
+}
+.players {
+  display: flex;
+  align-items: center;
+}
+.players img {
+  height: 56px;
+  width: 56px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f1ff;
+}
+.container {
+  width: 870px;
+  background-color: #ffffff;
+  padding: 30px;
+  margin-top: 21px;
+  border-radius: 5px;
+}
+.header {
+  color: #562eff;
+  font-size: 24px;
+  font-weight: 500px;
+  margin-top: 3px;
+}
+.player-name {
+  padding-left: 16px;
+  font-size: 18px;
+  font-weight: 500px;
+  line-height: 27px;
+}
+.break-line {
+  border: 1px solid #d1d1d1;
+  margin-bottom: 30px;
+}
+
+/*============= top-blog styles============================== */
+.image-div img {
+  width: 177px;
+  height: 117px;
+}
+.description {
+  margin-left: 16px;
+}
+.blog {
+  display: flex;
+}
+.blog-title {
+  font-size: 20px;
+}
+.author {
+  font-size: 16px;
+
+  color: #9f9f9f;
+}
+.author a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #562eff;
+}
+.parent-blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 26px;
+}
+.div-banner img {
+  width: 224px;
+  height: 104px;
+}
+.author {
+  color: #ed6b4f;
+  text-decoration: none;
+  margin-top: 6.13px;
+}
+.fa-star.filled {
+  color: #ffc014;
+}
+
+.fa-star.empty {
+  color: #aeaeae;
+}
+.fa-clock.color {
+  color: #ed6b4f;
+}
+.course-duration {
+  color: #ed6b4f;
+}
+.rating {
+  width: 253px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6.13px;
+}
+
+.all-courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  /* .top-container {
+    display: flex;
+    background-color: #ed6b4f;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .players,
+  .blog {
+    grid-template-columns: repeat(1, 1fr);
+  } */
+  .top-players,
+  .parent-blogs,
+  .all-courses {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .players {
+    justify-content: center;
+  }
+}
